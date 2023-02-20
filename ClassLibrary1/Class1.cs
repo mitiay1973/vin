@@ -33,5 +33,55 @@ namespace ClassLibrary1
             }
             return false;
         }
+        public string GetVINCountry(String vin)
+        {
+            if (CheckVIN(vin))
+            {
+                for (int i = 10; i <= 17; i++)
+                {
+                    if (vin[11] == vinCode[i])
+                    {
+                        return "Африка";
+                    }
+                }
+                for (int i = 18; i <= 24; i++)
+                {
+                    if (vin[11] == vinCode[i])
+                    {
+                        return "Азия";
+                    }
+                }
+                for (int i = 25; i <= 32; i++)
+                {
+                    if (vin[11] == vinCode[i])
+                    {
+                        return "Европа";
+                    }
+                }
+                for (int i = 1; i <= 5; i++)
+                {
+                    if (vin[11] == vinCode[i])
+                    {
+                        return "Северная Америка";
+                    }
+                }
+                for (int i = 6; i <= 7; i++)
+                {
+                    if (vin[11] == vinCode[i])
+                    {
+                        return "Океания";
+                    }
+                }
+                for (int i = 8; i <= 9; i++)
+                {
+                    if (vin[11] == vinCode[i])
+                    {
+                        return "Южная Америка";
+                    }
+                }
+            }
+
+            return "";
+        }
     }
 }
