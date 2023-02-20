@@ -23,7 +23,7 @@ namespace UnitTestProject1
             Assert.AreEqual(class1.CheckVIN("XTA210990Y2766389"), true);
         }
         [TestMethod]
-        public void Proverka_vin_XOA210990Y2766389()
+        public void Proverka_vin_XOA210990Y27663898()
         {
             Assert.AreEqual(class1.CheckVIN("XOA210990Y27663898"), false);
         }
@@ -33,7 +33,7 @@ namespace UnitTestProject1
             Assert.AreEqual(class1.CheckVIN("Z8NAJL00050366148"), true);
         }
         [TestMethod]
-        public void Proverka_vin_Z8NQJL00050366148()
+        public void Proverka_vin_Z8NQJL00050366()
         {
             Assert.AreEqual(class1.CheckVIN("Z8NAJL00050366"), false);
         }
@@ -63,9 +63,9 @@ namespace UnitTestProject1
             Assert.AreEqual(class1.GetVINCountry("Z8NAJL00050A66148"), "Африка");
         }
         [TestMethod]
-        public void Country_Z8NAJL00050J66148()
+        public void Country_Z8NAJL00050J66152()
         {
-            Assert.AreEqual(class1.GetVINCountry("Z8NAJL00050J66148"), "Азия");
+            Assert.AreEqual(class1.GetVINCountry("Z8NAJL00050J66152"), "Азия");
         }
         [TestMethod]
         public void Country_JHMCM56557CY04453()
